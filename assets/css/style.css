@@ -8,6 +8,40 @@ ul {
   list-style-type: none;
 }
 
-a {
+header {
+  background-image: url(../img/inflicted.png);
+  min-height: 25vh;
+}
+
+header .about {
+  width: 90%;
+  margin: auto;
+  max-width: 1600px;
+  padding: 0.5rem 0 0 0;
+}
+
+h1 a {
+  color: white !important;
   text-decoration: none;
+}
+
+header {
+  padding: 6rem 0 0 0;
+}
+
+header .about p {
+  color: white;
+  margin: 40px 0 0 0;
+}
+
+header .follow a {
+  text-decoration: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+  height: 2em;
+  background-color: #1d9bf0;
+  padding: 0.2rem;
+  border-radius: 20px;
 }
