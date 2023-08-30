@@ -7,6 +7,14 @@
 ul {
   list-style-type: none;
 }
+body {
+  min-height: 100vh;
+}
+
+:root {
+  --section-padding: 1em;
+  --text-color: black;
+}
 
 header {
   background-image: url(../img/inflicted.png);
@@ -48,6 +56,7 @@ header .follow a {
 
 nav {
   margin: 1em 0 0 0;
+  border-bottom: 1px solid var(--text-color);
 }
 nav ul {
   width: 90%;
@@ -58,7 +67,7 @@ nav ul {
 
 nav ul li a {
   text-decoration: none;
-  color: black;
+  color: var(--text-color);
   font-weight: bold;
   font-size: 17px;
   display: flex;
@@ -70,4 +79,85 @@ nav ul li a {
 
 nav ul li a:hover {
   background-color: rgba(255, 255, 255, 0.6);
+}
+
+section {
+  width: 90%;
+  max-width: 1500px;
+  margin: auto;
+}
+
+.layout {
+  padding: var(--section-padding);
+  color: white;
+  background-image: url(../img/inflicted.png);
+}
+
+.layout p a {
+  color: white;
+}
+
+.guide {
+  padding: var(--section-padding);
+  background-color: #5e35b1;
+}
+
+.guide a {
+  text-decoration: none;
+  color: white;
+}
+
+.examples,
+.patterns,
+.tutorial,
+.resources,
+.layout-news,
+.questions,
+.css-grid,
+.news,
+.bugs {
+  padding: var(--section-padding);
+  background-image: url(../img/tiny_grid.png);
+}
+
+.examples a,
+.patterns a,
+.tutorial a,
+.resources a,
+.layout-news a,
+.questions a,
+.css-grid a,
+.news a,
+.bugs a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.layout,
+.tutorial,
+.examples,
+.patterns,
+.resources,
+.layout-news,
+.questions,
+.css-grid,
+.news,
+.bugs {
+  border: 1px solid var(--text-color);
+}
+
+.examples {
+  position: relative;
+}
+
+.examples .flag {
+  font-size: 18px;
+  color: white;
+  width: 60px;
+  height: 35px;
+  background-color: green;
+  position: absolute;
+  top: -15px;
+  left: -25px;
+  transform: rotate(-30deg);
 }
